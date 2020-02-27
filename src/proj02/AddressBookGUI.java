@@ -5,6 +5,11 @@ import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
+
+/********************************************
+ * AddressBookGUI
+ * Builds graphical user interface for address book
+ ********************************************/
 public class AddressBookGUI
 {
     private JPanel window01;
@@ -15,6 +20,12 @@ public class AddressBookGUI
     private JButton removeButton;
     private JPanel box;
 
+
+    /**
+     * Main method
+     * Creates JFrame instance and adds implemented panels onto the frame
+     * @param args
+     */
     public static void main(String args[])
     {
         AddressBookGUI inst = new AddressBookGUI();
@@ -25,6 +36,10 @@ public class AddressBookGUI
         frame.setVisible(true);
     }
 
+    /**
+     * Creates a JPanel instance and adds windows on panel
+     * @return panel
+     */
     private JPanel windowBox()
     {
         box = new JPanel();
@@ -35,6 +50,11 @@ public class AddressBookGUI
         return box;
     }
 
+    /**
+     * Creates a panel with a scroll pane on it
+     * Default scroll bar setting is set to always
+     * @return a panel with scroll panel
+     */
     private JPanel firstWindow()
     {
         window01 = new JPanel();
@@ -47,6 +67,11 @@ public class AddressBookGUI
         return window01;
     }
 
+    /**
+     * Creates a panel and adds three buttons on it
+     * Each button has own action
+     * @return a panel with buttons
+     */
     private JPanel secondWindow()
     {
         AddressBook ab = new AddressBook();
