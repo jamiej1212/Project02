@@ -1,4 +1,4 @@
-package proj02;
+package address.gui;
 
 import javax.swing.*;
 import java.awt.*;
@@ -74,9 +74,6 @@ public class AddressBookGUI
      */
     private JPanel secondWindow()
     {
-        AddressBook ab = new AddressBook();
-        AddressEntry ae = new AddressEntry("Jane", "Doe", "123 Abc st", "San Jose", "CA",
-                95117, "408-111-1111", "janed@gmail.com");
 
         window02 = new JPanel();
         newButton = new JButton("New");
@@ -92,7 +89,7 @@ public class AddressBookGUI
             @Override
             public void actionPerformed(ActionEvent e)
             {
-                ab.add(ae);
+
             }
         });
         displayButton.addActionListener(new ActionListener()
@@ -100,7 +97,7 @@ public class AddressBookGUI
             @Override
             public void actionPerformed(ActionEvent e)
             {
-                ab.list();
+
             }
         });
         removeButton.addActionListener(new ActionListener()
@@ -108,7 +105,7 @@ public class AddressBookGUI
             @Override
             public void actionPerformed(ActionEvent e)
             {
-                ab.remove("Do");
+
             }
         });
 
