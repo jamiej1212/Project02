@@ -89,7 +89,8 @@ public class AddressBookGUI
             @Override
             public void actionPerformed(ActionEvent e)
             {
-
+                AddGUI addGUI = new AddGUI();
+                addGUI.setVisible(true);
             }
         });
         displayButton.addActionListener(new ActionListener()

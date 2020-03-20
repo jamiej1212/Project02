@@ -1,5 +1,6 @@
 package address;
-import address.DBConnection;
+import address.data.DBConnection;
+import address.gui.AddressBookGUI;
 
 import java.io.*;
 
@@ -26,5 +27,6 @@ class AddressBookApplication
         //call menu method from Menu
         //menuCall.menu(book);
         DBConnection con = new DBConnection();
+        AddressBookGUI adb = new AddressBookGUI();
     }
 }
