@@ -16,6 +16,8 @@ public class AddGUI
     private JLabel cityLabel;
     private JLabel stateLabel;
     private JLabel zipLabel;
+    private JLabel emailLabel;
+    private JLabel phoneLabel;
 
     private JPanel jPanelTextFields;
     private JTextField enterFirstNameTextField;
@@ -24,7 +26,12 @@ public class AddGUI
     private JTextField enterCityTextField;
     private JTextField enterStateTextField;
     private JTextField enterZipTextField;
+    private JTextField enterEmailLabel;
+    private JTextField enterPhoneLabel;
+
     private JButton addButton;
+    private JTextField enterEmailTextField;
+    private JTextField enterPhoneTextField;
 
     private JFrame frmClass;
 
@@ -70,6 +77,8 @@ public class AddGUI
         jPanelLabels.add(cityLabel);
         jPanelLabels.add(stateLabel);
         jPanelLabels.add(zipLabel);
+        jPanelLabels.add(emailLabel);
+        jPanelLabels.add(phoneLabel);
 
         firstNameLabel = new JLabel("First Name: ");
         firstNameLabel.setPreferredSize(new Dimension(130,30));
@@ -89,6 +98,12 @@ public class AddGUI
         zipLabel = new JLabel("Zip: ");
         stateLabel.setPreferredSize(new Dimension(130, 30));
 
+        emailLabel = new JLabel("Email: ");
+        emailLabel.setPreferredSize(new Dimension(130, 30));
+
+        phoneLabel = new JLabel("Phone: ");
+        phoneLabel.setPreferredSize(new Dimension(130, 30));
+
         return jPanelLabels;
     }
 
@@ -102,6 +117,8 @@ public class AddGUI
         jPanelTextFields.add(enterCityTextField);
         jPanelTextFields.add(enterStateTextField);
         jPanelTextFields.add(enterZipTextField);
+        jPanelTextFields.add(enterEmailTextField);
+        jPanelTextFields.add(enterPhoneTextField);
 
         enterFirstNameTextField = new JTextField("Enter first name");
         enterFirstNameTextField.setPreferredSize(new Dimension(130, 30));
@@ -120,6 +137,12 @@ public class AddGUI
 
         enterZipTextField = new JTextField("Enter zip");
         enterZipTextField.setPreferredSize(new Dimension(130, 30));
+
+        enterEmailLabel = new JTextField("Enter email");
+        enterEmailLabel.setPreferredSize(new Dimension(130, 30));
+
+        enterPhoneLabel = new JTextField("Enter phone");
+        enterPhoneLabel.setPreferredSize(new Dimension(130, 30));
 
         // button to add entry to database
         addButton = new JButton("Add");
