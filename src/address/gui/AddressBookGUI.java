@@ -71,8 +71,6 @@ public class AddressBookGUI
             {
                 AddGUI a = new AddGUI();
                 a.NewScreen();
-
-
             }
         });
         displayButton.addActionListener(new ActionListener()
