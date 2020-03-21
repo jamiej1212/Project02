@@ -69,6 +69,7 @@ public class AddGUI
         jPanelLabels.add(streetLabel);
         jPanelLabels.add(cityLabel);
         jPanelLabels.add(stateLabel);
+        jPanelLabels.add(zipLabel);
 
         firstNameLabel = new JLabel("First Name: ");
         firstNameLabel.setPreferredSize(new Dimension(130,30));
@@ -127,7 +128,7 @@ public class AddGUI
             @Override
             public void actionPerformed(ActionEvent e)
             {
-
+                JOptionPane.showMessageDialog(jPanelTextFields, "Entry added to address book!");
             }
         });
         jPanelTextFields.add(addButton);

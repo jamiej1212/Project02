@@ -28,7 +28,7 @@ public class RemoveGUI {
 
     private void initialize()
     {
-        frmClass = new JFrame("New Address Entry");
+        frmClass = new JFrame("Remove an Address Entry");
         frmClass.setBounds(600, 600, 600, 600);
         frmClass.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frmClass.setLayout(new FlowLayout());
