@@ -12,14 +12,11 @@ import java.awt.event.ActionListener;
  ********************************************/
 public class AddressBookGUI
 {
-    private JPanel window01;
     private JPanel window02;
-    private JScrollPane scrollPanel;
     private JButton displayButton;
     private JButton newButton;
     private JButton removeButton;
     private JPanel box;
-
 
     /**
      * Main method
@@ -44,28 +41,11 @@ public class AddressBookGUI
     {
         box = new JPanel();
         box.setLayout(new BorderLayout());
-        box.add(firstWindow(), BorderLayout.CENTER);
         box.add(secondWindow(), BorderLayout.SOUTH);
 
         return box;
     }
 
-    /**
-     * Creates a panel with a scroll pane on it
-     * Default scroll bar setting is set to always
-     * @return a panel with scroll panel
-     */
-    private JPanel firstWindow()
-    {
-        window01 = new JPanel();
-        scrollPanel = new JScrollPane();
-        scrollPanel.setPreferredSize(new Dimension(200,100));
-        scrollPanel.setHorizontalScrollBarPolicy(JScrollPane.HORIZONTAL_SCROLLBAR_ALWAYS);
-        scrollPanel.setVerticalScrollBarPolicy(JScrollPane.VERTICAL_SCROLLBAR_ALWAYS);
-        window01.add(scrollPanel, BorderLayout.NORTH);
-
-        return window01;
-    }
 
     /**
      * Creates a panel and adds three buttons on it
@@ -89,6 +69,9 @@ public class AddressBookGUI
             @Override
             public void actionPerformed(ActionEvent e)
             {
+                AddGUI a = new AddGUI();
+                a.NewScreen();
+
 
             }
         });
