@@ -78,7 +78,8 @@ public class AddressBookGUI
             @Override
             public void actionPerformed(ActionEvent e)
             {
-
+                DisplayGUI d = new DisplayGUI();
+                d.NewScreen();
             }
         });
         removeButton.addActionListener(new ActionListener()
@@ -86,7 +87,8 @@ public class AddressBookGUI
             @Override
             public void actionPerformed(ActionEvent e)
             {
-
+                RemoveGUI r = new RemoveGUI();
+                r.NewScreen();
             }
         });
 
