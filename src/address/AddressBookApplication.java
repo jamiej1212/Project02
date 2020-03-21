@@ -1,9 +1,6 @@
 package address;
-import address.data.DBConnection;
-import address.gui.AddressBookGUI;
 
-import java.io.*;
-
+import java.io.IOException;
 
 /**************************************************************
  * main : AddressBookApplication
@@ -18,8 +15,7 @@ class AddressBookApplication
      *
      * @param args contains the supplied command line arguments
      */
-    public static void main(String args[]) throws IOException
-    {
+    public static void main(String args[]) throws IOException {
         //instances creation
         //AddressBook book = new AddressBook();
         //Menu menuCall = new Menu();
@@ -27,6 +23,6 @@ class AddressBookApplication
         //call menu method from Menu
         //menuCall.menu(book);
         DBConnection con = new DBConnection();
-        AddressBookGUI adb = new AddressBookGUI();
     }
+
 }
